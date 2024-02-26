@@ -54,6 +54,16 @@ nav {
   min-height: 44px;
   padding: 5px 24px 5px 32px;
   color: #fff;
+  font-size: 1.2rem;
+  &:focus {
+    border-color: #5f6368;
+  }
+
+  &:hover {
+    background-color: #303134;
+    box-shadow: 0 1px 6px 0 #171717;
+    border-color: rgba(223, 225, 229, 0);
+  }
 }
 
 .search-icon {
@@ -76,10 +86,22 @@ nav {
   max-width: fit-content;
   padding: 0 16px;
   cursor: pointer;
-  font-size: 1.2rem;
+  font-size: 1rem;
   &:hover {
     border: 1px solid #5f6368;
   }
+}
+
+.img-container {
+  position: relative;
+}
+
+.img-caption {
+  position: absolute;
+  right: 0;
+  bottom: 5px;
+  color: #4487f6;
+  font: 16px/16px roboto-regular, arial, sans-serif;
 }
 
 @media only screen and (min-width: 425px) {

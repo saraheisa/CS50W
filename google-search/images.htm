@@ -12,17 +12,20 @@
       </nav>
     </header>
     <main class="main">
-      <img
-        class=""
-        alt="Google"
-        height="92"
-        src="public/images/branding/googlelogo/2x/googlelogo_light_color_272x92dp.png"
-        srcset="
-          public/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png 1x,
-          public/images/branding/googlelogo/2x/googlelogo_light_color_272x92dp.png 2x
-        "
-        width="272"
-      />
+      <div class="img-container">
+        <img
+          class=""
+          alt="Google"
+          height="92"
+          src="public/images/branding/googlelogo/2x/googlelogo_light_color_272x92dp.png"
+          srcset="
+            public/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png 1x,
+            public/images/branding/googlelogo/2x/googlelogo_light_color_272x92dp.png 2x
+          "
+          width="272"
+        />
+        <span class="img-caption">images</span>
+      </div>
       <form action="https://google.com/search" class="form">
         <span role="presentation" class="search-icon">
           <svg
@@ -36,6 +39,7 @@
           </svg>
         </span>
         <input type="text" name="q" class="input" />
+        <input type="text" name="tbm" value="isch" readonly hidden />
         <input type="submit" value="Google Search" class="button" />
       </form>
     </main>
