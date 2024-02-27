@@ -1,0 +1,104 @@
+main {
+  margin: 25px;
+}
+
+.title {
+  color: #d93025;
+}
+
+.divider {
+  width: calc(100% + 98px);
+  transform: translateX(-49px);
+  border-color: hsl(0deg 0% 99.28% / 7%);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: #fff;
+  max-width: 1440px;
+}
+
+.row {
+  display: flex;
+  flex-flow: wrap;
+  width: 100%;
+  align-items: center;
+  & input,
+  span {
+    flex: auto;
+    min-width: 167px;
+  }
+  & label,
+  .row-title {
+    width: 16%;
+    min-width: 167px;
+  }
+  & p {
+    width: 240px;
+    max-width: 240px;
+    padding-inline-start: 1rem;
+    color: #b7b7b7;
+    font-size: 0.7rem;
+  }
+}
+
+.input {
+  width: auto;
+  height: 25px;
+  font-size: 1rem;
+  border-radius: 1px;
+  padding: 5px 16px;
+}
+
+.cta {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  & input {
+    background-color: #4d90fe;
+    margin-inline-end: 240px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .row {
+    & p {
+      /* only hide on the screen but make it available for screen readers */
+      display: none;
+    }
+    & label {
+      width: 25%;
+    }
+
+    & .row-title {
+      width: 100%;
+    }
+  }
+
+  .cta {
+    & input {
+      margin-inline-end: 0px;
+    }
+  }
+}
+
+@media only screen and (max-width: 516px) {
+  .row {
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+
+    & label,
+    & input {
+      width: 100%;
+    }
+  }
+
+  .cta {
+    & input {
+      margin-inline-end: 0px;
+    }
+  }
+}
