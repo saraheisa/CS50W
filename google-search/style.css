@@ -17,7 +17,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
   padding-top: 12%;
 }
 
@@ -79,7 +79,7 @@ nav {
 .cta {
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  gap: 0.8rem;
 }
 
 .button {
@@ -92,7 +92,7 @@ nav {
   max-width: fit-content;
   padding: 0 16px;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 0.8rem;
   &:hover {
     border: 1px solid #5f6368;
   }
