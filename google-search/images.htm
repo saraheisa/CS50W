@@ -2,6 +2,8 @@
 <html lang="en">
   <head>
     <title>Search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="google search images page" />
     <link type="text/css" rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -28,7 +30,7 @@
       </div>
       <form action="https://google.com/search" class="form">
         <span role="presentation" class="search-icon">
-          <svg
+          <svg 
             focusable="false"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -39,7 +41,12 @@
             ></path>
           </svg>
         </span>
-        <input type="text" name="q" class="input" />
+        <input
+          type="text"
+          name="q"
+          class="input"
+          aria-label="search input field"
+        />
         <input type="text" name="tbm" value="isch" readonly hidden />
         <input type="submit" value="Google Search" class="button" />
       </form>
